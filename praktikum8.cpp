@@ -92,18 +92,43 @@ int main () {
 #include <math.h>
 using namespace std;
 
+int addition( int a, int b) {
+	int z;
+	z=a+b;
+	return z;
+}
+
+int pengurangan( int a, int b) {
+	int z;
+	z=a-b;
+	return z;
+}
+
+int perkalian( int a, int b) {
+	int z;
+	z=a*b;
+	return z;
+}
+
+int pembagian( int a, int b) {
+	float z;
+	z =  (float) a/ (float) b;
+	cout << z <<"\n";
+	return z;
+}
+
 int main () {
-	int a,b, pilihan;
+	int a,b, pilihan,x;
 	cin >> a;
 	cin >> b;
 	
 	cout <<"MENU\n1. Penjumlahan\n2. Pengurangan\n3. Perkalian\n4. Pembagian\npilihan menu (1-4) :";
 	cin >> pilihan;
 	switch(pilihan) {
-		case 1: cout<<a+b<<"\n";break;
-		case 2: cout<<a-b<<"\n";break;
-		case 3: cout<<a*b<<"\n";break;
-		case 4: cout<<a/b<<"\n";break;
+		case 1: x = addition(a,b); cout<<x<<"\n";break;
+		case 2: x = pengurangan(a,b); cout<<x<<"\n";break;
+		case 3: x = perkalian(a,b); cout<<x<<"\n";break;
+		case 4: x = pembagian(a,b);
 	}
 	return 0;
 }
