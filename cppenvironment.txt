@@ -1,0 +1,46 @@
+#include <iostream> 
+
+using namespace std;
+
+komentar pake "//"
+dia sensitif terhadap kapital
+tipe data : char, short int, int, long int
+
+//set tipe data
+int a
+float averager
+
+global variable : bisa dipake sampe akhir
+local variable : cuman bisa dipake disitu doang
+
+//standar input dan output
+input pake cin
+cin >> i
+cout <<"print value you enter" << i << "\n";
+
+//looping (while,for,do while)
+while (n!=0) {
+	perintah
+}
+
+do {
+	perintah
+} while (n!= 0)
+
+
+//switch case
+switch(x) {
+	case 1: cout << "x is 1"; break; //kalo nilai x nya 1 masuk ke case 1
+	case 2: cout << "x is 2"; break; //kalo nilai x nya 2 masuk ke case 2
+}
+
+//function
+int addition (int a, int b) {
+	int r;
+	r = a+b;
+	return(r);
+}
+
+
+
+ 
